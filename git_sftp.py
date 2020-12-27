@@ -13,8 +13,27 @@ import logging
 import git  # pip install gitpython
 import pysftp  # pip install pysftp
 
-from datetime import datetime
 from typing import List
+from functools import wraps
+from datetime import datetime
+from time import time, gmtime, strftime
+
+
+def time_it(func):
+
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        timer_start = time()
+        returned = func(*args, *kwargs)
+        timer_stop = time()
+
+        result = timer_stop - timer_start
+
+        print(f"The function {func.__name__!r} took {result} seconds"
+              f" or {strftime('%H:%M:%S', gmtime(result))}.")
+        return returned
+
+    return wrapper
 
 
 class GitSftp:
@@ -95,6 +114,7 @@ class GitSftp:
 
     # Copy section
 
+    @time_it
     def copy(self) -> None:
         self.put_dir(self.root_src, self.root_dst)
 
@@ -175,6 +195,7 @@ class GitSftp:
 
     # Clean section
 
+    @time_it
     def clean(self) -> None:
         self.dir_clean(self.root_dst, self.root_src)
 
