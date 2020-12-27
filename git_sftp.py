@@ -29,8 +29,8 @@ def time_it(func):
 
         result = timer_stop - timer_start
 
-        print(f"The function {func.__name__!r} took {result} seconds"
-              f" or {strftime('%H:%M:%S', gmtime(result))}.")
+        logging.info(f"The function {func.__name__!r} took {result} seconds or {strftime('%H:%M:%S', gmtime(result))}.")
+
         return returned
 
     return wrapper
