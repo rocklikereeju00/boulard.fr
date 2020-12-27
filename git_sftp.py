@@ -1,3 +1,11 @@
+"""
+
+This script is used to pull the content of a git repository,
+and upload it to a server via Secure File Transfer Protocol (SFTP).
+This can be used when said server doesn't allow git commands.
+
+"""
+
 import os
 import logging
 
@@ -176,10 +184,9 @@ class GitSftp:
         Used recursively.
         In this case, src is the remote directory, and dst is the local path.
 
-        :param str src: Absolute path to the source directory (RAID tree).
-        :param str dst: Absolute path to the destination directory (original directory).
+        :param str src: Absolute path to the remote directory.
+        :param str dst: Absolute path to the original directory.
         """
-        # Refer to the dir_copy function for additional comments.
 
         def remove_dir(dr: str, force: bool = False) -> None:
             if force:
@@ -196,11 +203,11 @@ class GitSftp:
 
         logging.debug(f"[DEBUG] Processing directory {src!r}")
 
-        for item in os.listdir(src):
+        for item in self.srv.listdir(src):
             item_remote_path = os.path.join(self.format_path(src), item)
             item_local_path = os.path.join(self.format_path(dst), item)
 
-            if os.path.isdir(item_remote_path):
+            if self.srv.isdir(item_remote_path):
                 if item in self.cp_excluded_directories_names:
                     continue
                 if item_remote_path in self.cp_excluded_directories:
@@ -287,11 +294,11 @@ logging.basicConfig(
 ########
 
 
-srv_args = {
-    "host": os.getenv('SFTP_HOST'),
-    "port": os.getenv('SFTP_PORT'),
-    "username": os.getenv('SFTP_USERNAME'),
-    "password": os.getenv('SFTP_PASSWORD'),
+srv_args = {  # Environment variables set in /etc/environment
+    "host": os.environ['SFTP_HOST'],
+    "port": int(os.environ['SFTP_PORT']),
+    "username": os.environ['SFTP_USERNAME'],
+    "password": os.environ['SFTP_PASSWORD'],
     # "log": "/var/log/pyGitSftp.log",  # Uncomment this argument to override the logging configuration above.
 }
 
