@@ -16,7 +16,10 @@
             <!-- Main -->
             <section id="main" class="wrapper">
                 <div class="inner">
-                    <h1 class="major">Choose your language !</h1>
+                    <h1 class="major">
+                        Welcome !<br />
+                        Please choose your language !
+                    </h1>
 
                     <section>
                         <div class="box alt">
