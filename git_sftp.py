@@ -338,7 +338,7 @@ logging.basicConfig(
 ########
 
 
-srv_args = {  # Environment variables set in /etc/environment
+srv_args = {  # Environment variables are set in /etc/environment
     "host": os.environ['SFTP_HOST'],
     "port": int(os.environ['SFTP_PORT']),
     "username": os.environ['SFTP_USERNAME'],
