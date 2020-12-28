@@ -45,7 +45,7 @@ class GitSftp:
     cp_excluded_ext: List[str] = []
     # Specific file names that should not be copied. Include the extension.
     # e.g. ["file.txt", "log.log"]
-    cp_excluded_files_names: List[str] = ["git_sftp.py"]
+    cp_excluded_files_names: List[str] = ["git_sftp.py", "LICENSE.txt", ".gitignore"]
     # Files that should not be copied. Absolute paths only.
     # e.g. ["/this/file.txt", "that/specific/log.log"]
     cp_excluded_files: List[str] = []
@@ -97,17 +97,28 @@ class GitSftp:
         return path
 
     @staticmethod
-    def git_pull() -> None:
+    def git_pull() -> bool:
+        """
+        Launches a git pull on the current working directory.
+        :return bool: True if there has been updates on the git repository, False otherwise.
+        """
         g = git.cmd.Git(os.getcwd())
-        g.pull()
+        s = g.pull()
+        logging.debug(f"[DEBUG] Git return value: {s!r}")
+        if s == 'Already up to date.':
+            return False
+        else:
+            return True
 
     def remote_dir_exists(self, dr: str, create: bool = False) -> bool:
+        logging.debug(f"[DEBUG] Checking for directory existence: {dr!r}.")
         if self.srv.exists(dr):
             if os.path.isdir(dr):
+                logging.debug(f"[DEBUG] Directory exists: {dr!r}.")
                 return True
         else:
             if create:
-                logging.info(f"[INFO] Creating directory tree {dr!r}")
+                logging.info(f"[INFO] Creating directory tree {dr!r}.")
                 self.srv.makedirs(dr)
                 return True
         return False
@@ -215,7 +226,8 @@ class GitSftp:
             else:
                 try:
                     os.rmdir(dr)
-                except (FileNotFoundError, OSError):
+                except (FileNotFoundError, OSError) as e:
+                    logging.debug(f"[DEBUG] Caught exception while trying to remove directory {dr!r}: {e!r}")
                     pass
                 except PermissionError:
                     logging.warning(f'[PermissionError] Could not delete directory {dr!r}.')
@@ -324,14 +336,21 @@ srv_args = {  # Environment variables set in /etc/environment
 }
 
 
-def main():
+def main() -> bool:
     src = os.getcwd()
     with pysftp.Connection(**srv_args) as srv:
         git_sftp = GitSftp(srv, src)
-        git_sftp.git_pull()
-        git_sftp.copy()
-        git_sftp.clean()
+        if git_sftp.git_pull():  # If the git repository had updates.
+            git_sftp.copy()
+            git_sftp.clean()
+            delete_log = False
+        else:
+            delete_log = True
+        return delete_log
 
 
 if __name__ == "__main__":
-    main()
+    del_log = main()
+    if del_log:
+        os.remove(logfile)
+
