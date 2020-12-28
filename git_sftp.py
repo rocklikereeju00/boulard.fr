@@ -315,7 +315,7 @@ create_log_file(log_dst, logfile)
 # Setup the configuration for logging.
 logging.basicConfig(
     format=u'%(asctime)s - %(message)s',  # We add a timestamp to each log entries.
-    level=logging.INFO,
+    level=logging.DEBUG,
     datefmt='%m/%d/%Y %I:%M:%S %p',
     filename=logfile,
     filemode="w",
