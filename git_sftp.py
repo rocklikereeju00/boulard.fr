@@ -185,7 +185,7 @@ class GitSftp:
             src_size = src_stats.st_size
             dst_size = dst_stats.st_size
 
-            # If neither the modification date nor the file size changed, return
+            # If neither the modification date nor the file size changed, return.
             if not src_last_mod > dst_last_mod:
                 return
             if not src_size != dst_size:
