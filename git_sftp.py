@@ -247,7 +247,7 @@ class GitSftp:
                     continue
                 self.dir_clean(item_remote_path, item_local_path)
                 if len(self.srv.listdir(item_remote_path)) == 0:
-                    # If after the clean the directory has no children, we can remove it.
+                    # We can remove the directory if it has no children after the cleaning process
                     remove_dir(item_remote_path)
 
             elif os.path.isfile(item_remote_path):
