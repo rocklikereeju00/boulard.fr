@@ -160,7 +160,7 @@
 										Mid-2019, I got very interested in botany, and by that I don't especially mean gardening,
 										but rather organisms evolution, which amazes me ! <br />
 										I am currently the very glad owner of a vivarium ! <br />
-										If I wasn't in computer science, I'd probably would've become biologist.
+										If I wasn't in computer science, I probably would've become a biologist.
 									</p>
 								</section>
 								<section>
