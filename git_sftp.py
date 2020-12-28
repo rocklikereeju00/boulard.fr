@@ -77,6 +77,8 @@ class GitSftp:
 
         self.srv = srv
 
+        self._force_put: bool = False
+
         self.root_src = self.format_path(src)
         self.root_dst = self.format_path(self.srv.pwd)
 
@@ -122,6 +124,15 @@ class GitSftp:
                 self.srv.makedirs(dr)
                 return True
         return False
+
+    def force(self, b: bool) -> None:
+        """
+        This method is used to change the force_put attribute, which dictates how the file put (the upload) behaves.
+        If the force is set to True, the system will override all files on the server without checking.
+        It is suited for high-capacity bandwidths.
+        As much as you can, let it switched on False (the default).
+        """
+        self._force_put = b
 
     # Copy section
 
@@ -172,22 +183,24 @@ class GitSftp:
         logging.debug(f"[DEBUG] Processing file {src!r}")
 
         dst_file_already_exist = self.srv.exists(dst) and self.srv.isfile(dst)
+        additional_status = ""
 
-        # If the file already exists in the destination
-        if dst_file_already_exist:
-            # Gather information on the src and dst files.
-            src_stats = os.stat(src)
-            dst_stats = self.srv.stat(dst)
-            src_last_mod = src_stats.st_mtime
-            dst_last_mod = dst_stats.st_mtime
-            src_size = src_stats.st_size
-            dst_size = dst_stats.st_size
+        if not self._force_put:
+            # If the file already exists in the destination
+            if dst_file_already_exist:
+                # Gather information on the src and dst files.
+                src_stats = os.stat(src)
+                dst_stats = self.srv.stat(dst)
+                src_last_mod = src_stats.st_mtime
+                dst_last_mod = dst_stats.st_mtime
+                src_size = src_stats.st_size
+                dst_size = dst_stats.st_size
 
-            # If neither the modification date nor the file size changed, return.
-            if not src_last_mod > dst_last_mod:
-                return
-            if not src_size != dst_size:
-                return
+                # If neither the modification date nor the file size changed, return.
+                if not src_last_mod > dst_last_mod:
+                    return
+                if not src_size != dst_size:
+                    return
 
         status = "Updated" if dst_file_already_exist else "Copied"
 
@@ -200,7 +213,7 @@ class GitSftp:
         except UnicodeEncodeError:
             logging.warning(f"[UnicodeEncodeError] Could not copy file {src!r}")
         else:
-            logging.info(f"[INFO] {status} file {src!r} to {dst!r}")
+            logging.info(f"[INFO] {status} file {src!r} to {dst!r}{additional_status}.")
 
     # Clean section
 
@@ -339,6 +352,7 @@ def main() -> bool:
     with pysftp.Connection(**srv_args) as srv:
         git_sftp = GitSftp(srv, src)
         if git_sftp.git_pull():  # If the git repository had updates.
+            git_sftp.force(True)
             git_sftp.copy()
             git_sftp.clean()
             delete_log = False
