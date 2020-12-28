@@ -109,7 +109,7 @@
             <section>
                 <h3>Sources du site web</h3>
                 <p>
-                    <span class="image left"><a target="_blank" href="https://github.com/Phaide/website"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo de GitHub" width="160" height="160" /></a></span>
+                    <span class="image left"><a target="_blank" href="https://github.com/Phaide/website"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo GitHub" width="160" height="160" /></a></span>
                     Car nous sommes des gens modernes, nous partageons l'idéologie <i>open-source</i>
                     (c'est au moins le cas de l'administrateur du site !).<br />
                     Qu'est-ce que ça signifie ?<br />
