@@ -1,3 +1,6 @@
+# Resources:
+# https://perishablepress.com/stupid-htaccess-tricks/
+
 #Add HSTS to the header, in order for browser to remember the redirection to https
 #<IfModule mod_headers.c>
 #	Header set Strict-Transport-Security "max-age=16006000; includeSubDomains; preload"
@@ -7,10 +10,10 @@
 Header always set Content-Security-Policy "upgrade-insecure-requests;"
 
 # HTTPS redirection
-RewriteEngine on
-RewriteCond %{SERVER_PORT} 80 [OR]
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+# RewriteEngine on
+# RewriteCond %{SERVER_PORT} 80 [OR]
+# RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+# RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 # Silently redirect URL to php equivalent
 RewriteCond %{REQUEST_FILENAME} !-f
