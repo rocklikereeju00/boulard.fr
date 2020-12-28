@@ -75,7 +75,7 @@
                                 <h2>Lilian</h2>
                                 <div class="content">
                                     <p>
-                                        Lilian works as a software engineer at the French Institute for Research in Computer Science and Automation.<br />
+                                        Lilian works at the French Institute for Research in Computer Science and Automation.<br />
                                         He specializes in Artificial Intelligence.
                                     </p>
                                 </div>
@@ -128,7 +128,7 @@
                             we can offer you the possibility to host your very own page and email address on this domain !<br />
                             If you are interested, please use the <a href="#footer">contact form below</a> to get in touch with the administrator.<br />
                             <br />
-                            PS: The domain is not for sale (and probably never will).
+                            PS: The domain is not for sale.
                         </p>
                     </section>
                 </div>

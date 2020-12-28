@@ -50,7 +50,7 @@
                 </p>
                 <hr />
                 <p>
-                    <i>Une petite lesson d'éthymologie, si vous le permettez</i><br />
+                    <i>Une petite leçon d'éthymologie, si vous le permettez</i><br />
                     Le nom de famille "Boulard" semble être d'origine germanique.
                     Dérivé de "Bolohard" (<i>bolo</i> signifiant ami/frère, et <i>hard</i> signifiant dur/fort),
                     selon <a target="_blank" href="https://www.geneanet.org/nom-de-famille/BOULARD">Geneanet</a>,
@@ -70,11 +70,11 @@
                         ?>
                         <img src="https://gravatar.com/avatar/<?php echo $hash ?>" alt="Image de profil de Lilian" />
                     </span>
-                    <a href="https://lilian.boulard.fr/en">
+                    <a href="https://lilian.boulard.fr/en/index">
                         <h2>Lilian</h2>
                         <div class="content">
                             <p>
-                                Lilian travaille à l'Institut National de Recherche en Informatique et en Automatique (Inria) en tant qu'ingénieur logiciel.<br />
+                                Lilian travaille à l'Institut National de Recherche en Informatique et en Automatique (Inria).<br />
                                 Il se spécialise en Intelligence Artificielle.
                             </p>
                         </div>
@@ -127,7 +127,7 @@
                     Bon... vu qu'en plus d'être modernes, on est sympa, on vous offre la possibilité d'héberger votre propre page et adresse email sur ce domaine !<br />
                     Si vous êtes intéressé, merci d'utiliser le <a href="#footer">formulaire de contact</a> se trouvant plus bas sur cette page, afin de prendre contact avec l'administrateur.<br />
                     <br />
-                    PS: Ce domaine n'est pas à vendre (et ne le sera probablement jamais).
+                    PS: Ce domaine n'est pas à vendre.
                 </p>
             </section>
         </div>
@@ -137,7 +137,7 @@
     <footer id="footer">
         <div class="inner">
             <section>
-                <h2>Rentrer en contact</h2>
+                <h2>Prendre contact</h2>
                 <p>
                     Attention: ce formulaire ne fonctionne pas encore, merci de revenir dans quelques jours !
                 </p>
