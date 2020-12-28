@@ -115,7 +115,7 @@ class GitSftp:
     def remote_dir_exists(self, dr: str, create: bool = False) -> bool:
         logging.debug(f"[DEBUG] Checking for directory existence: {dr!r}.")
         if self.srv.exists(dr):
-            if os.path.isdir(dr):
+            if self.srv.isdir(dr):
                 logging.debug(f"[DEBUG] Directory exists: {dr!r}.")
                 return True
         else:
@@ -149,6 +149,7 @@ class GitSftp:
         """
         logging.debug(f"[DEBUG] Processing directory {src!r}")
 
+        dst_exists = None
         for item in os.listdir(src):
             item_local_path = os.path.join(self.format_path(src), item)
             item_remote_path = os.path.join(self.format_path(dst), item)
@@ -169,7 +170,8 @@ class GitSftp:
                     ext = item.split(".")[-1]
                     if ext in self.cp_excluded_ext:
                         continue
-                self.remote_dir_exists(dst, create=True)
+                if not dst_exists:
+                    dst_exists = self.remote_dir_exists(dst, create=True)
                 self.put_file(item_local_path, item_remote_path)
 
     def put_file(self, src: str, dst: str) -> None:
@@ -182,7 +184,7 @@ class GitSftp:
         """
         logging.debug(f"[DEBUG] Processing file {src!r}")
 
-        dst_file_already_exist = self.srv.exists(dst) and self.srv.isfile(dst)
+        dst_file_already_exist = self.srv.isfile(dst)
         additional_status = ""
 
         if not self._force_put:
@@ -352,7 +354,7 @@ def main() -> bool:
     with pysftp.Connection(**srv_args) as srv:
         git_sftp = GitSftp(srv, src)
         if git_sftp.git_pull():  # If the git repository had updates.
-            git_sftp.force(True)
+            git_sftp.force(False)
             git_sftp.copy()
             git_sftp.clean()
             delete_log = False
