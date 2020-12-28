@@ -35,7 +35,7 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Lilian Boulard</h1>
-							<h2>Ingénieur en Intelligence Artificielle</h2>
+							<h2>Étudiant en Intelligence Artificielle</h2>
 							<br />
 							<ul class="actions">
 								<li><a href="https://lilian.boulard.fr/fr/portfolio/" class="button scrolly">Portfolio</a></li>
