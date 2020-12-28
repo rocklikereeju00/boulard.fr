@@ -168,7 +168,7 @@
 									<h3></h3>
 									<p>
 										Well I did until I listened to some music ! <br />
-										Did you ever heard music ? Because that's some next level <i>epicness</i> ! <br />
+										Have you ever heard music ? Because that's some next level <i>epicness</i> ! <br />
 										So much so that I learned to do it my-very-self: I am a self-taught pianist since 14, and guitarist since 17 !<br />
 										<br />
 									</p>
