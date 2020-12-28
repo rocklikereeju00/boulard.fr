@@ -38,7 +38,7 @@
 							<h2>Étudiant en Intelligence Artificielle</h2>
 							<br />
 							<ul class="actions">
-								<li><a href="https://lilian.boulard.fr/fr/portfolio/" class="button scrolly">Portfolio</a></li>
+								<li><a href="portfolio/index" class="button scrolly">Portfolio</a></li>
 							</ul>
 						</div>
 					</section>
@@ -177,7 +177,7 @@
 								</section>
 							</div>
 							<ul class="actions">
-								<li><a href="https://lilian.boulard.fr/fr/portfolio/moi" class="button">Portfolio, section "Moi"</a></li>
+								<li><a href="portfolio/index#moi" class="button">Portfolio, section "Moi"</a></li>
 							</ul>
 						</div>
 					</section>

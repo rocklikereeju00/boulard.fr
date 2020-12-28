@@ -38,7 +38,7 @@
 							<h2>Artificial Intelligence student</h2>
 							<br />
 							<ul class="actions">
-								<li><a href="https://lilian.boulard.fr/en/portfolio/" class="button scrolly">Portfolio</a></li>
+								<li><a href="portfolio/index" class="button scrolly">Portfolio</a></li>
 							</ul>
 						</div>
 					</section>
@@ -159,11 +159,8 @@
 										With this icon, did you expect me to show you how much <i>eco-friendly</i> I am ? <br />
 										'cause that's what I'm 'bout to do ! <br />
 										Mid-2019, I got very interested in botany, and by that I don't especially mean gardening,
-										but rather organisms evolution, which
-										Courant 2019, je me suis pris de fascination pour la botanique,
-										et par là je ne parle pas de jardinage, mais de l'évolution des organismes,
-										which amazes me ! <br />
-										I am currently the very owner of a vivarium ! <br />
+										but rather organisms evolution, which amazes me ! <br />
+										I am currently the very glad owner of a vivarium ! <br />
 										If I wasn't in computer science, I'd probably would've become biologist.
 									</p>
 								</section>
@@ -179,7 +176,7 @@
 								</section>
 							</div>
 							<ul class="actions">
-								<li><a href="https://lilian.boulard.fr/fr/portfolio/moi" class="button">Portfolio, section "Moi"</a></li>
+								<li><a href="portfolio/index#me" class="button">Portfolio, "Me" section</a></li>
 							</ul>
 						</div>
 					</section>
