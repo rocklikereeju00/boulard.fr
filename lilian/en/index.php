@@ -101,7 +101,7 @@
 								I, [REDACTED], am a French student in Computer Science,
 								specialised in software engineering applied to Artificial Intelligence.<br />
 								Apprentice in a french research institute during the day, developer of
-								<a title="HAL 9000... Stanley Kubrick ! No ? Really !? Oh, that's a shame...">HAL 9000</a> during the week-end.<br />
+								<a title="HAL 9000... Stanley Kubrick ! No ? Really !? Oh...">HAL 9000</a> during the week-end.<br />
 							</p>
 							<div class="features">
 								<section>
@@ -125,7 +125,7 @@
 										I currently work as a Machine Learning and Software Engineering apprentice at the
 										<a target="_blank" href="https://en.wikipedia.org/wiki/French_Institute_for_Research_in_Computer_Science_and_Automation">French National Institute for Reasearch in Computer Science and Automation</a> (<i>Inria</i>),
 										as part of the <a target="_blank" href="https://team.inria.fr/parietal/">Parietal team</a>.<br />
-										It is a 3-year contract (which is rather scarce in public research institutes!), which focuses on machine learning libraries development in Python.<br />
+										It is a 3-year contract (which is rather scarce in French public research institutes!), which focuses on machine learning libraries development in Python.<br />
 										As of November 2020, I work on dirty_cat, and will come to work somewhat soon on <a target="_blank" href="https://en.wikipedia.org/wiki/Scikit-learn">Scikit-Learn</a>,
 										an extremely popular machine learning library, developed mainly by <i>Inria</i> !
 									</p>
@@ -145,7 +145,6 @@
 									<p>
 										Anonymity and decentralization on Internet are two of my great interests !<br />
 										<br />
-										<i>
 										<i>Quite ironically, we can note that I give my full name on the web.</i><br />
 										<br />
 										If I didn't have the opportunity to work at <a target="_blank" href="https://team.inria.fr/parietal/">Inria Parietal</a>,
