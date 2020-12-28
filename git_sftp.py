@@ -139,8 +139,6 @@ class GitSftp:
         logging.debug(f"[DEBUG] Processing directory {src!r}")
 
         for item in os.listdir(src):
-            # Here, item_local_path and item_remote_path can be of any type (directory, file, link, etc)
-            # src however is a directory for sure. The dst directory will be created if necessary.
             item_local_path = os.path.join(self.format_path(src), item)
             item_remote_path = os.path.join(self.format_path(dst), item)
 
