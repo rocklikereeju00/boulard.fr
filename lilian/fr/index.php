@@ -183,7 +183,7 @@
 						<div class="inner">
 							<h2>Me contacter</h2>
 							<p>
-								Je suis disponible aux coordonnées suivantes pour tout contact, professionnel ou non ! <br />
+								Je suis disponible via le formulaire suivant pour tout contact, professionnel ou non ! <br />
 								Merci de rester courtois ; toute publicité est totalement proscrite !
 							</p>
 							<div class="split style1">
@@ -210,10 +210,6 @@
 								</section>
 								<section>
 									<ul class="contact">
-										<li>
-											<h3>Email</h3>
-											<a title="Volontairement épelé pour éviter le spam!">lilian arobase boulard point fr</a>
-										</li>
 										<li>
 											<h3>Réseaux</h3>
 											<ul class="icons">

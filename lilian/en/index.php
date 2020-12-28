@@ -181,7 +181,7 @@
 						<div class="inner">
 							<h2>Get in touch</h2>
 							<p>
-								I am available at the following contact information for any contact, pro or not ! <br />
+								You can reach me via the following contact form for any request, pro or not ! <br />
 								Please be polite ; advertisement is prohibited !
 							</p>
 							<div class="split style1">
@@ -209,11 +209,7 @@
 								<section>
 									<ul class="contact">
 										<li>
-											<h3>Email</h3>
-											<a title="Spelled to avoid spam !">lilian at boulard dot fr</a>
-										</li>
-										<li>
-											<h3>Réseaux</h3>
+											<h3>Social</h3>
 											<ul class="icons">
 												<li><a href="https://github.com/Phaide" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 												<li><a href="https://www.instagram.com/phaide_phd/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
