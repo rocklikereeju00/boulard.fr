@@ -71,7 +71,7 @@
                                 ?>
                                 <img src="https://gravatar.com/avatar/<?php echo $hash ?>" alt="Lilian's profile picture" />
                             </span>
-                            <a href="https://lilian.boulard.fr/en">
+                            <a href="https://lilian.boulard.fr/en/index">
                                 <h2>Lilian</h2>
                                 <div class="content">
                                     <p>
