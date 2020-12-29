@@ -113,7 +113,7 @@
                     Car nous sommes des gens modernes, nous partageons l'idéologie <i>open-source</i>
                     (c'est au moins le cas de l'administrateur du site !).<br />
                     Qu'est-ce que ça signifie ?<br />
-                    Et bien, si vous souhaitez réutiliser le code de ce site, ou demander des modifications,
+                    Et bien, si vous souhaitez réutiliser le code source de ce site, ou demander des modifications,
                     ou quoi que ce soit vraiment, vous le pouvez via le <a target="_blank" href="https://github.com/Phaide/website">dépôt GitHub</a> !
                 </p>
             </section>
