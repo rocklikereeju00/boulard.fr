@@ -353,13 +353,13 @@ def main() -> bool:
     src = os.getcwd()
     with pysftp.Connection(**srv_args) as srv:
         git_sftp = GitSftp(srv, src)
-        # if git_sftp.git_pull():  # If the git repository had updates.
-        git_sftp.force(False)
-        git_sftp.copy()
-        git_sftp.clean()
-        delete_log = False
-        #else:
-        #    delete_log = True
+        if git_sftp.git_pull():  # If the git repository had updates.
+            git_sftp.force(False)
+            git_sftp.copy()
+            git_sftp.clean()
+            delete_log = False
+        else:
+            delete_log = True
         return delete_log
 
 
