@@ -3,7 +3,7 @@
 <html lang="fr">
 
 <head>
-    <title>Site web de la famille boulard</title>
+    <title>Site web de la famille Boulard</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="../common/assets/css/main.css" />
@@ -70,7 +70,7 @@
                         ?>
                         <img src="https://gravatar.com/avatar/<?php echo $hash ?>" alt="Image de profil de Lilian" />
                     </span>
-                    <a href="https://lilian.boulard.fr/en/index">
+                    <a href="https://lilian.boulard.fr/fr/index">
                         <h2>Lilian</h2>
                         <div class="content">
                             <p>
