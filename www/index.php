@@ -27,8 +27,8 @@
                     <section>
                         <div class="box alt">
                             <div class="row gtr-uniform">
-                                <div class="col-6"><span class="image fit"><a href="fr/index"><img src="http://common.boulard.fr/assets/flags/4x3/fr.svg" alt="Français" /></a></span></div>
-                                <div class="col-6"><span class="image fit"><a href="en/index"><img src="http://common.boulard.fr/assets/flags/4x3/us.svg" alt="English" /></a></span></div>
+                                <div class="col-6"><span class="image fit"><a href="fr/index"><img src="https://common.boulard.fr/assets/flags/4x3/fr.svg" alt="Français" /></a></span></div>
+                                <div class="col-6"><span class="image fit"><a href="en/index"><img src="https://common.boulard.fr/assets/flags/4x3/us.svg" alt="English" /></a></span></div>
                             </div>
                         </div>
                     </section>
