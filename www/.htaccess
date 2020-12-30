@@ -6,9 +6,6 @@
 #	Header set Strict-Transport-Security "max-age=16006000; includeSubDomains; preload"
 #</IfModule>
 
-# Add SVG for Google Chrome compatibility
-AddType image/svg+xml svg
-
 # Avoid mixed content
 Header always set Content-Security-Policy "upgrade-insecure-requests;"
 
