@@ -154,7 +154,7 @@
 									<p>
 										Avez cette icône, vous attendiez-vous à ce que je vous démontre à quel point je suis <i>eco-friendly</i> ? <br />
 										Et bien c'est ce que je vais faire !<br />
-										Courant 2019, je me suis pris de fascination pour la botanique,
+										Courant 2019, je me suis découvert une fascination pour la botanique,
 										et par là je ne parle pas de jardinage, mais de l'évolution des organismes,
 										ce qui m'émerveille ! <br />
 										Je suis aujourd'hui l'heureux propriétaire d'un vivarium ! <br />
