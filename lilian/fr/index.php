@@ -183,7 +183,7 @@
 						<div class="inner">
 							<h2>Me contacter</h2>
 							<p>
-								Je suis disponible via le formulaire suivant pour tout contact, professionnel ou non ! <br />
+								Je suis disponible via ce formulaire pour tout contact, professionnel ou non ! <br />
 								Merci de rester courtois ; toute publicité est totalement proscrite !
 							</p>
 							<div class="split style1">

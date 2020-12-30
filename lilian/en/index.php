@@ -181,7 +181,7 @@
 						<div class="inner">
 							<h2>Get in touch</h2>
 							<p>
-								You can reach me via the following contact form for any request, pro or not ! <br />
+								You can reach me via this contact form for any request, pro or not ! <br />
 								Please be polite ; advertisement is prohibited !
 							</p>
 							<div class="split style1">

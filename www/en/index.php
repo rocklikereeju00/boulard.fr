@@ -162,7 +162,7 @@
                     <section>
                         <h2>Contact</h2>
                         <p>
-                            To contact the website's administrator, please use the side form.<br />
+                            To contact the website's administrator, please use this form.<br />
                             If you wish to contact a specific person, please head over to their page (all available pages are listed above).
                         </p>
                     </section>
