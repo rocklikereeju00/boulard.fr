@@ -122,7 +122,7 @@
                 <h3>Mon nom est également Boulard !</h3>
                 <p>
                     <!--<span class="image right"><img src="" alt="" /></span>-->
-                    Hein ?<br />
+                    Quoi ?<br />
                     Vous voulez dire qu'on est pas les seuls ?<br />
                     Bon... vu qu'en plus d'être modernes, on est sympa, on vous offre la possibilité d'héberger votre propre page et adresse email sur ce domaine !<br />
                     Si vous êtes intéressé, merci d'utiliser le <a href="#footer">formulaire de contact</a> se trouvant plus bas sur cette page, afin de prendre contact avec l'administrateur.<br />
