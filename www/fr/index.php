@@ -68,7 +68,7 @@
                         $email = "lilian@boulard.fr";
                         $hash = md5(strtolower($email));
                         ?>
-                        <img src="https://gravatar.com/avatar/<?php echo $hash ?>" alt="Image de profil de Lilian" />
+                        <img src="https://gravatar.com/avatar/<?php echo $hash ?>?s=1024" alt="Image de profil de Lilian" />
                     </span>
                     <a href="https://lilian.boulard.fr/fr/index">
                         <h2>Lilian</h2>
