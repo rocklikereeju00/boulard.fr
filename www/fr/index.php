@@ -162,8 +162,8 @@
                 <h2>Contact</h2>
                 <p>
                     Pour contacter l'administrateur de ce site web, merci d'utiliser ce formulaire.<br />
-                    Si vous souhaitez rentrer en contact avec une personne en particulier,
-                    merci de vous rendre sur leur page personnelle (toutes les pages disponibles sont listées ci-dessus).
+                    Si vous souhaitez prendre contact avec une personne en particulier,
+                    merci de vous rendre sur sa page personnelle (toutes les pages disponibles sont listées ci-dessus).
                 </p>
             </section>
             <ul class="copyright">
