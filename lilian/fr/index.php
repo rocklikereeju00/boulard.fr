@@ -185,6 +185,7 @@
 							<p>
 								Je suis disponible via ce formulaire pour tout contact, professionnel ou non ! <br />
 								Merci de rester courtois ; toute publicité est totalement proscrite !
+                                <b>Attention: ce formulaire ne fonctionne pas encore, merci de revenir dans quelques jours !</b>
 							</p>
 							<div class="split style1">
 								<section>

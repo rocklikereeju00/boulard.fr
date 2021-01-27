@@ -182,7 +182,8 @@
 							<h2>Get in touch</h2>
 							<p>
 								You can reach me via this contact form for any request, pro or not ! <br />
-								Please be polite ; advertisement is prohibited !
+								Please be polite ; advertisement is prohibited !<br />
+                                <b>Beware: this form doesn't work yet, please come back in a few days !</b>
 							</p>
 							<div class="split style1">
 								<section>
