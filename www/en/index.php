@@ -110,11 +110,11 @@
                     <section>
                         <h3>Website's source</h3>
                         <p>
-                            <span class="image left"><a target="_blank" href="https://github.com/Phaide/website"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github logo" style="width: 7em; height: 7em;" /></a></span>
+                            <span class="image left"><a target="_blank" href="https://github.com/boulard-family/boulard.fr"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github logo" style="width: 7em; height: 7em;" /></a></span>
                             As we are very modern people, we share the open-source mindset (at least the website's administrator does!).<br />
                             What does this mean ?<br />
                             Well, if you wish to reuse the source code of this website, or request modifications, or anything really,
-                            you can do so by having a look at the <a target="_blank" href="https://github.com/Phaide/website">GitHub's repository</a> !
+                            you can do so by having a look at the <a target="_blank" href="https://github.com/boulard-family/boulard.fr">GitHub's repository</a> !
                         </p>
                     </section>
                     <hr />
